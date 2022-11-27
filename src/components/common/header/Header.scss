@@ -1,0 +1,100 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    height: 60px;
+    position: sticky;
+    top: 0%;
+    padding: 0px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.header a{
+    color: #333;
+    margin-right: 20px;
+}
+
+.header a:hover{
+    color: #000;
+}
+
+.whishlist{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+   
+}
+
+.total-whishlist{
+    position: absolute;
+    left: 100%;
+    top: -100%;
+    border-radius: 50%;
+    width: 10px;
+    height: 12px;
+    padding: 6px;
+    background: #fff;
+    border: 2px solid #008080;
+    color: #000;
+    text-align: center;
+    font: 14px Arial, sans-serif;
+}
+
+.whishlist-text{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.whishlist-text:hover{
+    color:#ff1156
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.logo{
+    color: #ff1156;
+    font-style: 20px;
+    text-transform: uppercase;
+    
+}
+
+.logo .logo-link{
+    color: #ff1156;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.logo .logo-link:hover{
+    color: #ff1156;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .header{
+        flex-direction: row;
+        height: 50px;
+    }
+
+    .header a{
+        margin-right: 0;
+    }
+
+    .header ul{
+        margin: 20px 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo{
+        margin: 20px 0;
+    }
+}
